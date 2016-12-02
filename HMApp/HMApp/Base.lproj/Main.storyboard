@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esQ-2a-DIX">
+                                <rect key="frame" x="0.0" y="428" width="320" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-qg-oPd">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="52"/>
+                                        <color key="tintColor" red="0.72049546241760254" green="0.70397502183914185" blue="0.6609681248664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="ico_mensagem"/>
+                                        <connections>
+                                            <action selector="clickedMessages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBi-XA-W73"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRT-Qd-3Fu">
+                                        <rect key="frame" x="106" y="14" width="1" height="24"/>
+                                        <color key="backgroundColor" red="0.56904369592666626" green="0.57260674238204956" blue="0.57614392042160034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="AO1-BB-vII"/>
+                                            <constraint firstAttribute="height" constant="24" id="tts-aA-dfK"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkA-lH-poA">
+                                        <rect key="frame" x="107" y="0.0" width="106" height="52"/>
+                                        <color key="tintColor" red="0.72441703081130981" green="0.70789617300033569" blue="0.66488850116729736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="ico_minhas_vendas"/>
+                                        <connections>
+                                            <action selector="clickedSales:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mlo-WN-sBu"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26f-4i-awz">
+                                        <rect key="frame" x="213" y="14" width="1" height="24"/>
+                                        <color key="backgroundColor" red="0.56904369592666626" green="0.57260674238204956" blue="0.57614392042160034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="R87-aa-cut"/>
+                                            <constraint firstAttribute="height" constant="24" id="VZx-po-F97"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUM-mg-XIP">
+                                        <rect key="frame" x="214" y="0.0" width="106" height="52"/>
+                                        <color key="tintColor" red="0.72049546241760254" green="0.70397502183914185" blue="0.6609681248664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="ico_notificacoes"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NUM-mg-XIP" firstAttribute="leading" secondItem="26f-4i-awz" secondAttribute="trailing" id="3EE-Ua-lOy"/>
+                                    <constraint firstItem="NUM-mg-XIP" firstAttribute="top" secondItem="esQ-2a-DIX" secondAttribute="top" id="4Aa-E9-ZMH"/>
+                                    <constraint firstItem="26f-4i-awz" firstAttribute="width" secondItem="vRT-Qd-3Fu" secondAttribute="width" id="Eso-LA-peu"/>
+                                    <constraint firstItem="FkA-lH-poA" firstAttribute="top" secondItem="esQ-2a-DIX" secondAttribute="top" id="KI1-of-NJl"/>
+                                    <constraint firstItem="vRT-Qd-3Fu" firstAttribute="centerY" secondItem="esQ-2a-DIX" secondAttribute="centerY" id="PRt-7s-dwg"/>
+                                    <constraint firstAttribute="bottom" secondItem="4cF-qg-oPd" secondAttribute="bottom" id="R9y-pD-QPi"/>
+                                    <constraint firstItem="NUM-mg-XIP" firstAttribute="width" secondItem="4cF-qg-oPd" secondAttribute="width" id="T8B-Sb-jwv"/>
+                                    <constraint firstItem="4cF-qg-oPd" firstAttribute="leading" secondItem="esQ-2a-DIX" secondAttribute="leading" id="UZr-xU-MS0"/>
+                                    <constraint firstItem="NUM-mg-XIP" firstAttribute="height" secondItem="4cF-qg-oPd" secondAttribute="height" id="avP-PH-7Hy"/>
+                                    <constraint firstItem="FkA-lH-poA" firstAttribute="leading" secondItem="vRT-Qd-3Fu" secondAttribute="trailing" id="bcQ-ma-DKv"/>
+                                    <constraint firstAttribute="bottom" secondItem="FkA-lH-poA" secondAttribute="bottom" id="cTR-Ot-Yhs"/>
+                                    <constraint firstAttribute="trailing" secondItem="NUM-mg-XIP" secondAttribute="trailing" id="dEx-nb-TDr"/>
+                                    <constraint firstItem="vRT-Qd-3Fu" firstAttribute="leading" secondItem="4cF-qg-oPd" secondAttribute="trailing" id="ekG-Xn-uQy"/>
+                                    <constraint firstItem="26f-4i-awz" firstAttribute="leading" secondItem="FkA-lH-poA" secondAttribute="trailing" id="kkj-uV-rXp"/>
+                                    <constraint firstItem="4cF-qg-oPd" firstAttribute="top" secondItem="esQ-2a-DIX" secondAttribute="top" id="l4F-fL-FUR"/>
+                                    <constraint firstAttribute="bottom" secondItem="NUM-mg-XIP" secondAttribute="bottom" id="lyX-Wv-yyC"/>
+                                    <constraint firstAttribute="height" constant="52" id="p4U-jv-QGS"/>
+                                    <constraint firstItem="FkA-lH-poA" firstAttribute="height" secondItem="4cF-qg-oPd" secondAttribute="height" id="p5V-LP-N9E"/>
+                                    <constraint firstItem="26f-4i-awz" firstAttribute="centerY" secondItem="esQ-2a-DIX" secondAttribute="centerY" id="tqb-N5-8IC"/>
+                                    <constraint firstItem="FkA-lH-poA" firstAttribute="width" secondItem="4cF-qg-oPd" secondAttribute="width" id="yA1-cZ-Y9n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="esQ-2a-DIX" secondAttribute="trailing" id="3wf-hn-ZLG"/>
+                            <constraint firstItem="esQ-2a-DIX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ImR-fq-tfG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="esQ-2a-DIX" secondAttribute="bottom" id="y7V-xq-goc"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rightViewInititialScale">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="vTab" destination="esQ-2a-DIX" id="mLA-59-mUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2450" y="-701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_mensagem" width="30" height="30"/>
+        <image name="ico_minhas_vendas" width="30" height="30"/>
+        <image name="ico_notificacoes" width="30" height="30"/>
+    </resources>
+</document>

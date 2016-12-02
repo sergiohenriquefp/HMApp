@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  HMApp
+
+  Created by Sergio Freire on 30/11/16.
+  Copyright © 2016 Sergio Freire. All rights reserved.
+*/
+
+//Menu
+"DASHBOARD" = "Dashboard";
+"MY_SALES" = "My Sales";
+"MY_PRODUCTS" = "My Products";
+"AFFILIATES" = "Affiliates";
+"MESSAGES" = "Messages";
+"NOTIFICATIONS" = "Notifications";
+"MY_ACCOUNT" = "My Account";
+"ABOUT" = "About the App";
+
+//Dashboard
+"CURRENT_BALANCE" = "Your current balance is:";
+"RECENT_MESSAGES" = "Recent Messages";
