@@ -123,12 +123,13 @@
 		C35EBA9B1DEFA12800FFD7BB /* HMApp */ = {
 			isa = PBXGroup;
 			children = (
-				C35EBAB31DEFA27100FFD7BB /* API */,
+				C3CD84E31DF1CADD00F4AE5C /* Extensions */,
 				C35EBB051DF12EFD00FFD7BB /* Utils */,
-				C35EBAB41DEFA27600FFD7BB /* Custom Views */,
+				C35EBAB41DEFA27600FFD7BB /* Libs */,
 				C35EBAB51DEFA28C00FFD7BB /* Model */,
 				C35EBAB61DEFA29800FFD7BB /* Storyboard */,
 				C35EBAB71DEFA2A200FFD7BB /* Controllers */,
+				C35EBAB31DEFA27100FFD7BB /* API */,
 				C35EBAB81DEFA2AE00FFD7BB /* Resources */,
 				C35EBA9C1DEFA12800FFD7BB /* Supporting Files */,
 			);
@@ -156,13 +157,12 @@
 			name = API;
 			sourceTree = "<group>";
 		};
-		C35EBAB41DEFA27600FFD7BB /* Custom Views */ = {
+		C35EBAB41DEFA27600FFD7BB /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				C35EBAEF1DF1033000FFD7BB /* Extensions */,
 				C35EBAE51DEFBC5800FFD7BB /* LGSideMenu */,
 			);
-			name = "Custom Views";
+			name = Libs;
 			sourceTree = "<group>";
 		};
 		C35EBAB51DEFA28C00FFD7BB /* Model */ = {
@@ -277,13 +277,13 @@
 			name = LGSideMenu;
 			sourceTree = "<group>";
 		};
-		C35EBAEF1DF1033000FFD7BB /* Extensions */ = {
+		C35EBAEF1DF1033000FFD7BB /* UIView Extension */ = {
 			isa = PBXGroup;
 			children = (
 				C35EBAF01DF1039700FFD7BB /* UIView+MBIBnspectable.h */,
 				C35EBAF11DF1039700FFD7BB /* UIView+MBIBnspectable.m */,
 			);
-			name = Extensions;
+			name = "UIView Extension";
 			sourceTree = "<group>";
 		};
 		C35EBAF61DF1163300FFD7BB /* HMMenu */ = {
@@ -316,8 +316,7 @@
 		C35EBB051DF12EFD00FFD7BB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C35EBB061DF12F0E00FFD7BB /* CurrencyUtils.h */,
-				C35EBB071DF12F0E00FFD7BB /* CurrencyUtils.m */,
+				C3CD84E41DF1CB0300F4AE5C /* CurrencyUtils */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -347,6 +346,23 @@
 				C35EBB031DF12D7400FFD7BB /* SalesTableViewCell.m */,
 			);
 			name = SalesTableViewCell;
+			sourceTree = "<group>";
+		};
+		C3CD84E31DF1CADD00F4AE5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C35EBAEF1DF1033000FFD7BB /* UIView Extension */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C3CD84E41DF1CB0300F4AE5C /* CurrencyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C35EBB061DF12F0E00FFD7BB /* CurrencyUtils.h */,
+				C35EBB071DF12F0E00FFD7BB /* CurrencyUtils.m */,
+			);
+			name = CurrencyUtils;
 			sourceTree = "<group>";
 		};
 		C4D140C5C63A050F08D7FC8E /* Frameworks */ = {

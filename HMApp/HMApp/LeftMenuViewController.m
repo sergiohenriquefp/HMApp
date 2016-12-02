@@ -14,6 +14,10 @@
 
 @interface LeftMenuViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *listObjects;
+@property (weak, nonatomic) IBOutlet UIView *vMenu;
+
 @end
 
 @implementation LeftMenuViewController

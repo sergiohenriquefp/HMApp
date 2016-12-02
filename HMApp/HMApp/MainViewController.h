@@ -11,8 +11,6 @@
 
 @interface MainViewController : LGSideMenuController
 
-@property (weak, nonatomic) IBOutlet UIView *vTab;
-
 - (IBAction)clickedSales:(id)sender;
 - (IBAction)clickedMessages:(id)sender;
 

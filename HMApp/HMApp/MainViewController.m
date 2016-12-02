@@ -13,6 +13,7 @@
 @interface MainViewController ()
 
 @property (strong, nonatomic) LeftMenuViewController *leftMenuViewController;
+@property (weak, nonatomic) IBOutlet UIView *vTab;
 
 @end
 

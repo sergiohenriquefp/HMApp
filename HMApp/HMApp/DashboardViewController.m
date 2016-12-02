@@ -12,6 +12,16 @@
 
 @interface DashboardViewController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *lViewTitle;
+@property (strong, nonatomic) IBOutlet UILabel *lCurrentBalance;
+@property (strong, nonatomic) IBOutlet UILabel *lRecentMessages;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *listObjectsTable;
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) NSMutableArray *listObjectsCollection;
+
 @end
 
 @implementation DashboardViewController

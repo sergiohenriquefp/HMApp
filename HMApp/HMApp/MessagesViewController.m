@@ -11,6 +11,11 @@
 
 @interface MessagesViewController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *lViewTitle;
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) NSMutableArray *listObjects;
+
 @end
 
 @implementation MessagesViewController
